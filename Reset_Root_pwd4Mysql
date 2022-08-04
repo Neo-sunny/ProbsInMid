@@ -1,0 +1,13 @@
+# Reset Root Password of MYSQL on Mac
+STEPS:-
+1.) Go to: 'System Preferences' >> 'MySQL' and stop MySQL
+2.) Open terminal and type:
+     sudo /usr/local/mysql/bin/mysqld_safe --skip-grant-tables
+3.) open another terminal and execute =>cd sudo /usr/local/mysql/bin/
+4.) ./mysql
+5.) mysql>ALTER USER 'root'@'localhost' IDENTIFIED BY 'mysqlrootpwd';
+6.) mysql> quit
+7.) sudo /usr/local/mysql/support-files/mysql.server stop
+8.) sudo /usr/local/mysql/support-files/mysql.server start
+9.) mysql -u root -p
+Enter your password and that's it.
