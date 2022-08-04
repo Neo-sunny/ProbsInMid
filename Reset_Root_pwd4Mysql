@@ -1,4 +1,5 @@
 # Reset Root Password of MYSQL on Mac
+## MAC OS: Monterey 12.5 and Mysql Server version: 5.7.17 MySQL Community Server (GPL)
 STEPS:-
 1.) Go to: 'System Preferences' >> 'MySQL' and stop MySQL
 2.) Open terminal and type:
